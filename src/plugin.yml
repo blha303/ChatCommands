@@ -151,3 +151,12 @@ commands:
     delwarp:
       description: Delete a specified warp.
       -usage: /delwarp
+permissions:
+    notaro.*:
+      description: All notaro nodes
+      children:
+      - notaro.sm: true
+      - etc.etc: true
+    notaro.sm:
+      description: Allows access to /sm
+      default: false
